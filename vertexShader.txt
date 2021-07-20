@@ -1,0 +1,8 @@
+#version 330 core
+layout (location = 0) in vec3 positions;
+out vec3 colourData;
+
+void main(){
+	gl_Position = vec4(positions.xyz, 1);
+	colourData = positions;
+}

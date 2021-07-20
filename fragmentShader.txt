@@ -1,0 +1,9 @@
+#version 330 core
+
+in vec3 colourData;
+
+out vec4 colours;
+
+void main(){
+	colours = vec4(colourData.x+0.5,1,colourData.z+0.5,1);
+}
